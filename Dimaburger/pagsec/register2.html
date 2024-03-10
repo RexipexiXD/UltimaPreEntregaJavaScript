@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimaburger - ¡Registrate asi conseguis ventajas unicas!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/diseño.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="shortcut icon" href="../img/fe6f50a94b4f4966a52996747cc6f1dd.png" type="image/x-icon">
+    <meta name="description" content="¡Consigue Venefisios unicos al crearte una cuenta en nuesta pagina!">
+    <meta name="keywords" content="Registrarse, Ingresar sus datos">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg fondonavbar">
+        <nav class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img class="dimaburger" src="../img/fe6f50a94b4f4966a52996747cc6f1dd.png" alt="Dimaburger">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../pagsec/producto.html">Producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="../pagsec/contacto.html">¿Quienes Somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="../pagsec/registrate.html">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-disabled="true" href="../pagsec/ayuda.html">Ayuda</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-danger" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <form class="contenedor">
+            <h1 class="TituloPrincipal">Ingrese sus datos</h1>
+            <div class="d-grid gap-2">
+              <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                <li class="nav-item " role="presentation">
+                  <a class="btn btn-danger btn-default btn-block w-75" id="tab-login" data-mdb-toggle="pill" href="../pagsec/registrate.html" role="tab" aria-controls="pills-login" aria-selected="true">Ingresar</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="btn btn-danger btn-default btn-block w-75" id="tab-register" data-mdb-toggle="pill" href="../pagsec/register2.html" role="tab" aria-controls="pills-register" aria-selected="false">Registrarse</a>
+                </li>
+              </ul>
+            </div>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+              <form>
+                <div class="form-outline mb-4">
+                  <input type="text" id="registerName" class="form-control" />
+                  <label class="form-label" for="registerName">Nombre</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="text" id="registerUsername" class="form-control" />
+                  <label class="form-label" for="registerUsername">Usuario</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="email" id="registerEmail" class="form-control" />
+                  <label class="form-label" for="registerEmail"> Ingrese su Correo electronico</label>
+                  <div id="validaRegistro"></div>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="password" id="registerPassword" class="form-control" />
+                  <label class="form-label" for="registerPassword"> Ingrese una Contraseña</label>
+                  <div id="validaContraseña"></div>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="password" id="registerRepeatPassword" class="form-control" />
+                  <label class="form-label" for="registerRepeatPassword">Repita la contraseña</label>
+                  <div id="validaConfirmacion"></div>
+                </div>
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked aria-describedby="registerCheckHelpText"/>
+                  <label class="form-check-label" for="registerCheck">
+                    Acepta los terminos y condiciones.
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-danger btn-block mb-3" onclick="validarEmail()">Registrarse</button>
+              </form>
+            </div>
+          </div>
+    </div>
+    <div class="contenedor">
+        <h2 class="titulo TituloPrincipal">¿Tenes problemas para registrarte?</h2>
+        <p class="parrafoprincipal">En caso de que tengas problemas para registrarte puede ser por dos razones. La primera es que posees un correo que ya este asociado a alguna cuenta de Dimaburger, en cuyo caso te sugerimos que presiones el botón que dice: “Haz click para logearte”. Si el problema persiste te dejamos un link con el cual podrás acceder a un apartado de quejas y atención al cliente para que puedas solicitar ayuda.</p>
+    </div>
+
+      <footer class="py-2 my-2">
+            <div class="footer fixed-bottom">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                  <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-light">Inicio</a></li>
+                  <li class="nav-item"><a href="../pagsec/producto.html"
+                          class="nav-link px-2 text-light">Producto</a></li>
+                  <li class="nav-item"><a href="../pagsec/contacto.html"
+                          class="nav-link px-2 text-light">¿Quienes Somos?</a></li>
+                  <li class="nav-item"><a href="../pagsec/registrate.html"
+                          class="nav-link px-2 text-light">Registrarse</a></li>
+                  <li class="nav-item"><a href="../pagsec/ayuda.html"
+                          class="nav-link px-2 text-light">Ayuda</a></li>
+              </ul>
+              <p class="text-center text-light">&copy;Dimaburger Industries 2023 :) </p>
+            </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../main.js"></script>
+  </body>
+</html>

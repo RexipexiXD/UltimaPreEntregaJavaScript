@@ -1,0 +1,65 @@
+
+.background-image {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.TituloPrincipal{
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.parrafoprincipal{
+    font-family: 'Raleway', sans-serif;
+}
+
+.navegador li {
+    margin: 15px;
+    list-style: none;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* @media  (min-width:730px) and (max-width:1023px) {
+    .TituloPrincipal {
+        font-size: 50px;
+    }
+    .parrafoprincipal {
+        font-size: 35px;
+    }
+    .cajapadre {
+        display: grid;
+
+        grid-template-areas:
+            "cajita1 cajita2"
+            "cajita3 cajita4"
+            "cajita5 cajita5"
+        ;
+    }
+
+}
+
+@media (max-width:729px) {
+    .TituloPrincipal {
+        font-size: 50px;
+    }
+    .parrafoprincipal {
+        font-size: 35px;
+    }
+    .cajapadre {
+        display: grid;
+        place-items: center;
+        grid-template-areas:
+            "cajita1"
+            "cajita2"
+            "cajita3"
+            "cajita4"
+            "cajita5"
+        ;
+    }
+
+} */

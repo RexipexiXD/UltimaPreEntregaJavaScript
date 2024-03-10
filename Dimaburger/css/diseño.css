@@ -1,0 +1,199 @@
+.CajaPrincipal {
+  display: flex;
+  flex-direction: row;
+  border: 2px black;
+  width: 90%;
+  padding: 20px 100px 100px 100px;
+  height: min-content;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: firebrick;
+  margin: 0;
+  background-image: url("https://w0.peakpx.com/wallpaper/129/278/HD-wallpaper-i-wantyou-inside-me-burger-cute-weird-food-random-awesome-simple-funny-burger.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  padding: 0;
+  font-family: "century gothic";
+  flex-wrap: wrap;
+  padding-bottom: 200px;
+}
+body ul {
+  list-style-type: none;
+}
+body li {
+  font-size: 1.25em;
+}
+
+.dimaburger {
+  width: 65px;
+}
+
+.fondonavbar {
+  background-color: black;
+}
+
+.footer {
+  background-color: black;
+  margin-top: auto;
+}
+
+.contenedor {
+  background-color: burlywood;
+  font-size: 25px;
+  opacity: 0.9;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.contenedor2 {
+  background-color: burlywood;
+  font-size: 25px;
+  opacity: 0.9;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.contenedor3 {
+  background-color: burlywood;
+  font-size: 25px;
+  opacity: 0.9;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.Cajamasprincipal {
+  display: flex;
+  padding: 3em 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cajitas1, .cajitas5, .cajitas4, .cajitas3, .cajitas2 {
+  margin: 10px;
+  width: 18rem;
+  height: 35rem;
+  grid-area: cajita1;
+}
+
+.cajitas2 {
+  grid-area: cajita2;
+}
+
+.cajitas3 {
+  grid-area: cajita3;
+}
+
+.cajitas4 {
+  grid-area: cajita4;
+}
+
+.cajitas5 {
+  grid-area: cajita5;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contenedorgod {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.background-image {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.imagenxd {
+  max-width: 300px;
+  height: 300px;
+}
+
+.imagentrabajo {
+  display: flex;
+  justify-content: right;
+}
+
+.img {
+  flex-grow: 1;
+  flex-basis: 200;
+  margin-top: 20px;
+}
+
+.imagentrabajo1 {
+  flex-grow: 1;
+  max-width: 40%;
+  height: 400px;
+  float: right;
+}
+
+.imagentrabajo2 {
+  max-width: 500px;
+  height: 250px;
+  float: left;
+}
+
+.imagentrabajo3 {
+  max-width: 700px;
+  height: 300px;
+  float: right;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1024px) {
+  .cajapadre {
+    display: grid;
+    grid-gap: 20px 1px;
+    place-items: center;
+    grid-template-areas: "cajita1 cajita2 cajita3 cajita4 cajita5";
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 730px) {
+  .TituloPrincipal {
+    font-size: 25px;
+  }
+  .parrafoprincipal {
+    font-size: 20px;
+  }
+  .cajapadre {
+    display: grid;
+    grid-gap: 20px 1px;
+    place-items: center;
+    grid-template-areas: "cajita1 cajita2" "cajita3 cajita4" "cajita5 cajita5";
+  }
+}
+@media screen and (max-width: 729px) and (min-width: 105px) {
+  .TituloPrincipal {
+    font-size: 25px;
+  }
+  .parrafoprincipal {
+    font-size: 20px;
+  }
+  .cajapadre {
+    display: grid;
+    place-items: center;
+    grid-template-areas: "cajita1" "cajita2" "cajita3" "cajita4" "cajita5";
+  }
+}
+@media screen and (max-width: 144px) and (min-width: 730px) {
+  .imagentrabajo1 {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=dise%C3%B1o.css.map */
